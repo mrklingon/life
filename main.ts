@@ -52,6 +52,13 @@ input.onButtonPressed(Button.A, function () {
     gameOfLife()
     show()
 })
+input.onButtonPressed(Button.AB, function () {
+    for (let index = 0; index < 5; index++) {
+        gameOfLife()
+        show()
+        basic.pause(1000)
+    }
+})
 // Use button B for reseting to random initial seed state
 input.onButtonPressed(Button.B, function () {
     reset()
